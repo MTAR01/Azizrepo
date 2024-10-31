@@ -1,0 +1,215 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Change text color to white for better contrast */
+    line-height: 1.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(315deg, rgba(34, 34, 34, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 34, 68, 1) 70%, rgba(34, 34, 34, 1) 100%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #00000027;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #5937d4, #810971);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 2s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+}
+
+.hero .cta {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .cta:hover {
+    background: #f39c12;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-image: url("/dzoNySL.gif");
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+}
+
+/* Projects */
+#projects .project {
+    background: #ecf0f136;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-list span {
+    background: #3498db;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Contact */
+.contact-btn {
+    background: #8e44ad;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #f39c12;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0000003d;
+    color: #fff;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+img {
+    margin-top: 20px;
+    width: 350px;
+    border-radius: 180%;
+ 
+
+}
+
+/* Canvas style */
+canvas {
+    position: fixed; /* Keeps canvas fixed in the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interaction with elements underneath */
+    z-index: -1; /* Send canvas behind other elements */
+}
