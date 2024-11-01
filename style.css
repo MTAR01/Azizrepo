@@ -213,3 +213,23 @@ canvas {
     pointer-events: none; /* Allow interaction with elements underneath */
     z-index: -1; /* Send canvas behind other elements */
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.social-icon {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #1da1f2; /* Change this color for the hover effect */
+}
