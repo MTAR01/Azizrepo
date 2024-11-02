@@ -59,4 +59,4 @@ resizeCanvas();
 createRaindrops();
 animate();
 
-window.addEventListener('resize', resizeCanvas);
+

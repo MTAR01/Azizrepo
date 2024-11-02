@@ -233,3 +233,63 @@ footer {
 .social-icon:hover {
     color: #1da1f2; /* Change this color for the hover effect */
 }
+.skill-bar {
+    width: 300px; /* Width of the skill bar container */
+    margin: 0 auto; /* Center the skill bar container */
+}
+
+.skill {
+    margin-bottom: 20px; /* Space between skill bars */
+    text-align: center; /* Center text inside skill block */
+}
+
+.skill p {
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Bold font for skill name */
+}
+
+.bar {
+    background-color: #e0e0e0; /* Background for the bar */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    height: 20px; /* Height of the skill bar */
+}
+
+.progress {
+    height: 100%; /* Full height of the bar */
+   
+    display: flex; /* Use flexbox for content alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: flex-end; /* Align content to the right */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* Text color */
+    font-size: 12px; /* Font size for text */
+    padding-right: 5px; /* Space to the right of the text */
+    position: relative; /* Positioning for the label */
+    /* No transition for smooth animation */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.progress::after {
+    content: attr(data-label); /* Content for the label */
+    position: absolute; /* Absolute positioning for label */
+    right: 5px; /* Space from the right */
+    top: 0; /* Align to the top */
+    color: #fff; /* Label color */
+}
